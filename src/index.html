@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TemplateAngular</title>
+  <base href="./">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+<body>
+  <app-root>
+    <style type="text/css">
+      #outline {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -35px;
+        margin-left: -35px;
+        z-index: 100000
+      }
+
+      #outline .circle {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border-top: 2px solid rgba(0, 0, 0, 0.2);
+        border-right: 2px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+        border-left: 2px solid #dedede;
+        -webkit-animation: circle 2s infinite linear;
+        animation: circle 2s infinite linear
+      }
+
+      @-webkit-keyframes circle {
+        100% {
+          -webkit-transform: rotate(360deg)
+        }
+      }
+
+      @keyframes circle {
+        100% {
+          transform: rotate(360deg);
+          transform: rotate(360deg)
+        }
+      }
+    </style>
+    <div id="outline">
+      <div class="circle"></div>
+    </div>
+  </app-root>
+</body>
+</html>

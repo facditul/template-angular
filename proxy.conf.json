@@ -1,0 +1,10 @@
+{
+  "/wssApp": {
+    "target": "http://localhost:8080",
+    "secure": false,
+    "pathRewrite": {
+      "^/wssApp": "wss"
+    }
+  },
+  "logLevel": "debug"
+}

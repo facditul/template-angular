@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+/* cursor puntero para componentes */
+.cursor-pointer {
+    cursor: pointer !important;
+}
+.cursor-pointer > * {
+    cursor: pointer !important;
+}
+/* cursor prhibido para deshabilitados */
+select[disabled] {
+    cursor: not-allowed;
+}
+/* ajuste date-picker en modal */
+bs-datepicker-container, bs-daterangepicker-container {
+    z-index: 99999999999 !important;
+}
+/* estilo validacion */
+form .form-control.ng-invalid.ng-touched {
+    border-color: #e74c3c;
+    color: #e74c3c;
+}
